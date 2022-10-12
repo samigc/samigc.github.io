@@ -5,3 +5,10 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+#post 
+{
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(99,47,99,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(99,47,99,1);
+  box-shadow: 10px 10px 5px 0px rgba(99,47,99,1);
+}
