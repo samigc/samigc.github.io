@@ -1,16 +1,42 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Mathematicart</title>
-  <link rel="stylesheet" href="samigc.css" charset="utf-8">
+  <meta charset="UTF-8">
+  <title>Sandra Castro</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+  </style>
 </head>
-<div id="header">Blog interdimensional</div>
 <body>
-  <h1>El mundo está hecho de historias</h1>
-  <h6>By: Sandra Guayambuco</h6>
-  <div id="post">
-    <h3>Selva del Darien</h3>
-    <p>¿Por qu&eacute; miles de latinoamericanos estan atravesando la selva del Darien?</p>
-    <img src="images/selva_darien.png" alt="">
-  </div>
+  <div id="root"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script type="text/babel">
+    const App = () => {
+      return (
+        <div className="container">
+          <h1>My Webpage</h1>
+          <ul>
+            <li>My Curriculum</li>
+            <li>/my portfolio</li>
+          </ul>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
 </body>
 </html>
